@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclados - Giatronik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"> GIATRONIK
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="teclados.html">TECLADOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de búsqueda -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Teclados para Laptops</h2>
+        <div class="row mb-4">
+            <div class="col">
+                <input type="text" id="searchInput" class="form-control" placeholder="Buscar teclados..." onkeyup="filterItems()">
+            </div>
+        </div>
+
+        <!-- Lista de productos -->
+        <div id="productsList" class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Ejemplo de producto -->
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop HP Pavilion 15</h5>
+                        <p class="card-text">Teclado original para modelos HP Pavilion 15 con retroiluminación. Color: negro.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repetir para cada producto -->
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Dell Inspiron 14</h5>
+                        <p class="card-text">Teclado de reemplazo compatible con Dell Inspiron 14. Color: negro, sin retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Lenovo IdeaPad 320</h5>
+                        <p class="card-text">Teclado de repuesto para Lenovo IdeaPad 320. Color: gris, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Asus ZenBook UX430</h5>
+                        <p class="card-text">Teclado original para Asus ZenBook UX430. Color: plata, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Acer Aspire 5</h5>
+                        <p class="card-text">Teclado de repuesto para Acer Aspire 5. Color: negro, sin retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Toshiba Satellite L50</h5>
+                        <p class="card-text">Teclado compatible con Toshiba Satellite L50. Color: negro, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop HP Envy 13</h5>
+                        <p class="card-text">Teclado original HP Envy 13. Color: plata, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Lenovo ThinkPad X1 Carbon</h5>
+                        <p class="card-text">Teclado compatible con Lenovo ThinkPad X1 Carbon. Color: negro, sin retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Asus VivoBook S15</h5>
+                        <p class="card-text">Teclado de reemplazo para Asus VivoBook S15. Color: gris, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Dell XPS 13</h5>
+                        <p class="card-text">Teclado compatible con Dell XPS 13. Color: negro, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop HP EliteBook 840</h5>
+                        <p class="card-text">Teclado original HP EliteBook 840. Color: plata, sin retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Acer Swift 3</h5>
+                        <p class="card-text">Teclado de repuesto para Acer Swift 3. Color: gris, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Toshiba Tecra Z50</h5>
+                        <p class="card-text">Teclado compatible con Toshiba Tecra Z50. Color: negro, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Lenovo Yoga 920</h5>
+                        <p class="card-text">Teclado original Lenovo Yoga 920. Color: plata, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Asus ROG Strix</h5>
+                        <p class="card-text">Teclado de repuesto para Asus ROG Strix. Color: negro, con retroiluminación RGB.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Dell Latitude 7490</h5>
+                        <p class="card-text">Teclado compatible con Dell Latitude 7490. Color: negro, sin retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop HP Spectre x360</h5>
+                        <p class="card-text">Teclado original HP Spectre x360. Color: plata, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Lenovo Legion Y540</h5>
+                        <p class="card-text">Teclado de repuesto para Lenovo Legion Y540. Color: negro, con retroiluminación RGB.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Acer Nitro 5</h5>
+                        <p class="card-text">Teclado compatible con Acer Nitro 5. Color: negro, con retroiluminación RGB.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado para Laptop Toshiba Dynabook</h5>
+                        <p class="card-text">Teclado compatible con Toshiba Dynabook. Color: negro, con retroiluminación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Giatronik. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function filterItems() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const items = document.getElementsByClassName('product-item');
+
+            for (let i = 0; i < items.length; i++) {
+                const title = items[i].getElementsByClassName('card-title')[0];
+                if (title.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                    items[i].style.display = "";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
