@@ -23,9 +23,6 @@ body {
 }
 
 
-.img-center {
-    
-}
 /* Sección de Servicios */
 
 .services {
@@ -266,7 +263,7 @@ a:hover {
     /* Color del icono */
     border-radius: 50%;
     /* Hacer el botón redondo */
-    padding: 15px;
+    padding: 20px;
     /* Espacio interno */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     /* Sombra del botón */
