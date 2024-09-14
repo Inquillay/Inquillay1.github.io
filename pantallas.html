@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baterías - Giatronik</title>
+    <title>Pantallas - Giatronik</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -34,63 +34,51 @@
         </div>
     </nav>
     <div class="container mt-5">
-        <h2 class="text-center mb-4">Baterías para Laptops</h2>
+        <h2 class="text-center mb-4">Pantallas para Laptops</h2>
 
         <!-- Barra de búsqueda -->
         <div class="search-bar">
-            <input type="text" id="searchInput" class="form-control" placeholder="Buscar batería por marca, modelo...">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar pantallas por marca, modelo...">
         </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4" id="productsContainer">
-            <div class="col product-item" data-name="Batería HP HT03XL">
-                <div class="card h-100">
-                    <img src="img/hp ht03.jpg" class="card-img-top" alt="Batería HP 5000 mAh">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">BATERIA ORIGINAL HP HT03XL</h5>
-                    </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="img/PANTALLA  15.6 REDUCIDA.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANTALLA 15.6 HD 30 PINES REDUCIDA</h5>
+                 
                 </div>
+              </div>
             </div>
-            <div class="col product-item" data-name="Batería Dell E5420">
-                <div class="card h-100">
-                    <img src="img/bateria dell E5420.jpg" class="card-img-top" alt="Batería Dell 4500 mAh">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">BATERIA DELL E5420</h5>
-                    </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/PANTALLA FULL HD  14  30 PINES REDUCIDA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANTALLA FULL HD  14  30 PINES REDUCIDA</h5>
+                  
                 </div>
+              </div>
             </div>
-            <div class="col product-item" data-name="Batería Lenovo T420">
-                <div class="card h-100">
-                    <img src="img/bateria lenovo T420.jpg" class="card-img-top" alt="Batería Lenovo 5200 mAh">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">BATERIA LENOVO T420</h5>
-                    </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/PANTALLA LED 15.6 40 PINES.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANTALLA LED 15.6 40 PINES </h5>
+                  
                 </div>
+              </div>
             </div>
-            <div class="col product-item" data-name="Batería Asus 6000 mAh">
-                <div class="card h-100">
-                    <img src="img/bateria asus x541u.jpg" class="card-img-top" alt="Batería Asus 6000 mAh">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">BATERIA ASUS X541U</h5>
-                    </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/PANTALLA 144 HZ.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PANTALLA 144 HZ</h5>
+                  
                 </div>
+              </div>
             </div>
-            <div class="col product-item" data-name="Batería Acer 4800 mAh">
-                <div class="card h-100">
-                    <img src="img/bateria acer v5.jpg" class="card-img-top" alt="Batería Acer 4800 mAh">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">BATERIA ACER V5</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col product-item" data-name="Batería Toshiba 5500 mAh">
-                <div class="card h-100">
-                    <img src="img/bateria toshiba 5024.jpg" class="card-img-top" alt="Batería Toshiba 5500 mAh">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">BATERIA TOSHIBA 5024</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+          </div>
     </div>
 
     <footer class="bg-dark text-light py-4">
@@ -98,12 +86,10 @@
             <p>&copy; 2024 Giatronik. Todos los derechos reservados.</p>
         </div>
     </footer>
-    
     <a href="https://wa.me/932119111" class="whatsapp-btn" target="_blank" title="Chat con nosotros en WhatsApp">
-        <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-whatsapp"></i>
     </a>
     <script>
-        
         // Filtro de búsqueda
         document.getElementById('searchInput').addEventListener('input', function() {
             const filter = this.value.toLowerCase();
